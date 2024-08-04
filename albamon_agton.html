@@ -16,6 +16,7 @@
 </style>
 
 <body>
+    <div class="container">
     <div class="search-container">
         <input type="text" id="search" class="search-input" placeholder="Search the store you are looking for" />
         <button class="search-button" onclick="searchLocation()">
@@ -23,11 +24,13 @@
             Search
         </button> <!-- Search button -->
     </div>
+
     <div class="button-container">
         <button><img src="icon/food.png" alt="food" />Food</button>
         <button><img src="icon/grocery.png" alt="grocery" />Grocery</button>
         <button><img src="icon/service.png" alt="service" />Service</button>
     </div>
+    
     <div id="map"></div>
     <div class="full-list" onclick="showFullList()">Full list</div>
     
@@ -37,6 +40,7 @@
         <div class="divider"></div> <!-- Line -->
         <i class="fas fa-map-marker-alt icon"></i> <!-- Location marker icon -->
     </div>
+</div>
     
     <script>
         // Set the map to Inha University back gate coordinates (zoom level 16)
