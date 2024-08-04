@@ -1,0 +1,116 @@
+/* 기본 레이아웃 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 제목 스타일 */
+.Title {
+    color: #0085FF;
+    font-size: 8vw;
+    font-weight: 800;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 이미지 컨테이너 스타일 */
+.image-container {
+    width: 80%;
+    max-width: 300px;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* 이미지 스타일 */
+.image-container img {
+    width: 100%;
+    height: auto;
+    transform: rotate(15.45deg);
+}
+
+/* 버튼 스타일 */
+.button {
+    width: 80%;
+    max-width: 250px;
+    height: 50px;
+    background: #4298FE;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* 선 스타일 */
+.line {
+    width: 80%;
+    max-width: 300px;
+    height: 1px;
+    background: #E9E9E9;
+    margin: 20px 0;
+}
+
+/* 로그아웃 박스 스타일 */
+.log-out-box {
+    width: 80%;
+    max-width: 250px;
+    height: 50px;
+    background: #E9E9E9;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* 로그아웃 텍스트 스타일 */
+.log-out-text {
+    color: #CDCDCD;
+    font-size: 20px;
+}
+
+/* 미디어 쿼리: 태블릿 이하 화면 */
+@media (max-width: 768px) {
+    .Title {
+        font-size: 6vw;
+        margin-top: 10px;
+    }
+
+    .button,
+    .log-out-box {
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+/* 미디어 쿼리: 모바일 화면 */
+@media (max-width: 480px) {
+    .Title {
+        font-size: 8vw;
+    }
+
+    .button,
+    .log-out-box {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .image-container {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .line {
+        width: 90%;
+    }
+}
